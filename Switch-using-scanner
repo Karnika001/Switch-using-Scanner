@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Switch {
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        System.out.println("Enter the range: ");
+        int a= Integer.parseInt(z.nextLine());
+
+
+        switch (a){
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            default:
+                System.out.println("Enter within 1-2");
+
+        }
+        System.out.println("Enter the string: ");
+        String s= z.nextLine();
+
+
+        switch (s){
+            case "w":
+                System.out.println("w");
+                break;
+            case "v":
+                System.out.println("Two");
+                break;
+            default:
+                System.out.println("Enter within w-v");
+
+        }
+        System.out.println("Enter the value: ");
+        String x=z.nextLine();
+        char b=x.charAt(0);
+        switch (b){
+            case 'x':
+                System.out.println("x");
+                break;
+            case 'y':
+                System.out.println("y");
+                break;
+            default:
+                System.out.println("Enter with x&y");
+
+        }
+    }
+}
